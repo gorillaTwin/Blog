@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>BLog</title>
+<link type="text/css" rel="stylesheet" href="/static/main.css">
+  </head>
+<style type="text/css">
+
+</style>
+
+<body>
+<form method="POST">
+        <label for="fname">New Post:</label><br>
+        title<br>
+        <input type="text" id="title" name="title" value={{title}}><br> <br>
+        art<br>
+        <textarea id="content" name="content" rows="4" cols="50" >{{art}}
+        </textarea><br>
+        <div class="error">{{error}} </div><br>
+        <input type="submit"/>     
+</form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Blog</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<a href="/" class="main-title"> Lični blog </a>
+<hr>
+{%for art in arts %} 
+<div class="post">
+  <div class="post-heading">
+     <div class="post-title">{{art[0]}}</div>
+     <div class="post-date">{{art[2]}}</div>
+     </div>
+     <div class="post-content">
+     {% autoescape false %}
+       {{art[1]}}
+     {% endautoescape %} 
+     </div> 
+  </div>
+  
+</div>
+{% endfor %}       
+<hr>
+{{timing}}
+</body>
+</html>
